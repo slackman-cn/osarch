@@ -57,4 +57,6 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: ghcr.io/slackman-cn/osarch:latest
+          provenance: false # Disable provenance to avoid unknown/unknown
+          sbom: false       # Disable sbom to avoid unknown/unknown
           outputs: type=image,name=target
